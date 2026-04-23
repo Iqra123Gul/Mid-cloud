@@ -51,4 +51,4 @@ jobs:
         with:
           app-name: app-iqra-35
           slot-name: Production
-          package: .
+          package: . 
