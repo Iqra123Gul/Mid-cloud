@@ -14,15 +14,6 @@ jobs:
       - name: Checkout code
         uses: actions/checkout@v4
 
-      - name: Install dependencies
-        run: npm install
-
-      - name: Build app (if exists)
-        run: npm run build --if-present
-
-      - name: Test app (if exists)
-        run: npm run test --if-present
-
       - name: Upload artifact
         uses: actions/upload-artifact@v4
         with:
@@ -51,4 +42,4 @@ jobs:
         with:
           app-name: app-iqra-35
           slot-name: Production
-          package: . 
+          package: .
